@@ -60,7 +60,8 @@
 .img-flex-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-around;
+  width: 100%;
 }
 .card-section-flex-container{
   display: flex;
@@ -146,19 +147,30 @@
       align-items: center;
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     .o-centered > h1 {
       font-size: 14px;
   }
   .o-centered > h3 {
     font-size: 10px;
+  }
+  }
+  @media (max-width: 800px) {
+    .text-detail-flex-container > h6 {
+      font-size: 8px;
+  }
+  .o-container{
+    height: 100%;
+    width:fit-content;
+
+  }
 }
 }
+
 @media (max-width: 800px) {
   .footer-section-flex {
     margin-right: 5%;
     flex-direction: column;
     align-items:flex-start
   }
-}
 }
