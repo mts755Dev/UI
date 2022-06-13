@@ -60,8 +60,8 @@
 .img-flex-container{
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
-  width: 100%;
+  justify-content:flex-start;
+  max-width:100%;
 }
 .card-section-flex-container{
   display: flex;
@@ -145,6 +145,7 @@
     .img-flex-container {
       flex-direction: column;
       align-items: center;
+      max-width: 100%;
     }
   }
   @media (max-width: 800px) {
@@ -155,6 +156,7 @@
     font-size: 10px;
   }
   }
+
   @media (max-width: 800px) {
     .text-detail-flex-container > h6 {
       font-size: 8px;
